@@ -40,7 +40,7 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: Build
-        run: npx nativefier --name "Jira" --icon "./icon-windows.icon" ${{ secrets.JIRA_URL }}
+        run: npx nativefier --name "Jira" --icon "./icon-windows.ico" ${{ secrets.JIRA_URL }}
 
       #- uses: actions/upload-artifact@master
       #  with:
