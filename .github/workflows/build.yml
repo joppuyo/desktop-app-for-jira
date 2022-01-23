@@ -50,6 +50,7 @@ jobs:
 
       - name: Stuff
         run: ls -al
+        shell: bash
       
       #- uses: actions/upload-artifact@master
       #  with:
