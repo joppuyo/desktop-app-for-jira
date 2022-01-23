@@ -49,7 +49,7 @@ jobs:
       
 
       - name: Stuff
-        run: ls -al
+        run: ls ./Jira-win32-x64 -al
         shell: bash
       
       #- uses: actions/upload-artifact@master
