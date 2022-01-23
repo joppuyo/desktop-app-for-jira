@@ -1,6 +1,6 @@
 # Desktop App for Jira
 
-This is an app that puts Jira web app in it's own window. Based on Electron and [Nativefier](https://github.com/nativefier/nativefier).
+This is an app that puts Jira web app in its own window. Based on Electron and [Nativefier](https://github.com/nativefier/nativefier).
 
 ## Screenshot
 
