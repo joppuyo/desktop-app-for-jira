@@ -34,7 +34,7 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: Build
-        run: nativefier --name "Jira" --icon "./icon-mac.png" ${{ secrets.JIRA_URL }}
+        run: npx nativefier --name "Jira" --icon "./icon-mac.png" ${{ secrets.JIRA_URL }}
 
       - uses: actions/upload-artifact@master
         with:
