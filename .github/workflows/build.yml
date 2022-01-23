@@ -28,7 +28,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: Mac App
-          path: Jira-darwin-x64/Jira.app
+          path: Jira-darwin-x64
   build-windows:
     runs-on: windows-2022
     steps:
@@ -42,17 +42,7 @@ jobs:
       - name: Build
         run: npx nativefier --name "Jira" --icon "./icon-windows.ico" ${{ secrets.JIRA_URL }}
 
-      #- uses: actions/upload-artifact@master
-      #  with:
-      #    name: Windows App
-      #    path: Jira-darwin-x64/Jira.app
-      
-
-      - name: Stuff
-        run: ls ./Jira-win32-x64 -al
-        shell: bash
-      
-      #- uses: actions/upload-artifact@master
-      #  with:
-      #    name: Windows App
-      #    path: .
+      - uses: actions/upload-artifact@master
+        with:
+          name: Windows App
+          path: Jira-win32-x64
